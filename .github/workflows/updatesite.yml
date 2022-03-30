@@ -8,6 +8,7 @@ on:
     branches: [ main ]
     paths-ignore:
       - '**.md'
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -20,11 +21,13 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        distribution: 'zulu'
-        java-version: 11
+        distribution: 'temurin'
+        java-version: 17
 
     - name: Cache Maven packages
       uses: actions/cache@v3
+      # On deployment do not use a cache
+      if: github.event_name != 'push'
       with:
         path: ~/.m2/repository
         key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
@@ -34,6 +37,8 @@ jobs:
       run: mvn -U -B package --file pom.xml
 
     - name: Deploy GH Pages
+      # Deploy on pushes to main
+      if: github.event_name == 'push'
       uses: JamesIves/github-pages-deploy-action@v4.2.5
       with:
         BRANCH: gh-pages 
