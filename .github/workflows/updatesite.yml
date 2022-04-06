@@ -39,7 +39,7 @@ jobs:
     - name: Deploy GH Pages
       # Deploy on pushes to main
       if: github.event_name == 'push'
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      uses: JamesIves/github-pages-deploy-action@v4.3.0
       with:
         BRANCH: gh-pages 
         FOLDER: target/repository
