@@ -9,7 +9,7 @@
 	<description>P2 Repository for generic Maven Depencencies</description>
 
 	<properties>
-		<tycho.version>2.7.2</tycho.version>
+		<tycho.version>2.7.3</tycho.version>
 		<spring.version>5.3.19</spring.version>
 		<tyrus.version>1.9</tyrus.version>
 	</properties>
