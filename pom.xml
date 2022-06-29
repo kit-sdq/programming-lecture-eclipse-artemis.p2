@@ -11,7 +11,7 @@
 	<properties>
 		<tycho.version>2.7.3</tycho.version>
 		<spring.version>5.3.21</spring.version>
-		<tyrus.version>1.9</tyrus.version>
+		<tyrus.version>2.0.3</tyrus.version>
 	</properties>
 
 	<dependencies>
