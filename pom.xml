@@ -10,7 +10,7 @@
 
 	<properties>
 		<tycho.version>3.0.0</tycho.version>
-		<spring.version>5.3.22</spring.version>
+		<spring.version>5.3.23</spring.version>
 		<tyrus.version>1.9</tyrus.version>
 	</properties>
 
