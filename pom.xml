@@ -10,8 +10,8 @@
 
 	<properties>
 		<tycho.version>3.0.0</tycho.version>
-		<spring.version>5.3.24</spring.version>
-		<tyrus.version>1.9</tyrus.version>
+		<spring.version>6.0.0</spring.version>
+		<tyrus.version>2.1.2</tyrus.version>
 	</properties>
 
 	<dependencies>
@@ -103,5 +103,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
