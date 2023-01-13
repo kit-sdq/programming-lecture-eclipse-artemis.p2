@@ -44,4 +44,4 @@ jobs:
         BRANCH: gh-pages 
         FOLDER: target/repository
         CLEAN: true 
-   
+        single-commit: true   
