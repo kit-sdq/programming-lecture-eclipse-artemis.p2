@@ -10,7 +10,7 @@
 
 	<properties>
 		<tycho.version>3.0.1</tycho.version>
-		<spring.version>6.0.3</spring.version>
+		<spring.version>6.0.4</spring.version>
 		<tyrus.version>2.1.2</tyrus.version>
 		<autograder.version>0.3</autograder.version>
 	</properties>
