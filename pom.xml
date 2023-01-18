@@ -12,7 +12,6 @@
 		<tycho.version>3.0.1</tycho.version>
 		<spring.version>6.0.3</spring.version>
 		<tyrus.version>2.1.2</tyrus.version>
-		<autograder.version>0.3</autograder.version>
 	</properties>
 
 	<dependencies>
@@ -31,11 +30,6 @@
 			<artifactId>tyrus-standalone-client</artifactId>
 			<version>${tyrus.version}</version>
 		</dependency>
-		<dependency>
-            <groupId>de.firemage.autograder</groupId>
-            <artifactId>autograder-core</artifactId>
-            <version>${autograder.version}</version>
-        </dependency>
 	</dependencies>
 
 	<build>
@@ -85,22 +79,6 @@
 									<artifacts>
 										<artifact>
 											<id>org.glassfish.tyrus.bundles:tyrus-standalone-client:${tyrus.version}</id>
-											<source>true</source>
-										</artifact>
-									</artifacts>
-								</feature>
-								<feature>
-									<id>de.firemage.autograder.autograder-core.feature</id>
-									<version>${autograder.version}</version>
-									<label>Autograder Core</label>
-									<providerName>github.com/Feuermagier/autograder</providerName>
-									<description>Autograder</description>
-									<copyright>Feuermagier</copyright>
-									<license>MIT License</license>
-									<generateSourceFeature>true</generateSourceFeature>
-									<artifacts>
-										<artifact>
-											<id>de.firemage.autograder:autograder-core:${autograder.version}</id>
 											<source>true</source>
 										</artifact>
 									</artifacts>
