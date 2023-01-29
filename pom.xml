@@ -11,7 +11,6 @@
 	<properties>
 		<tycho.version>3.0.1</tycho.version>
 		<spring.version>6.0.4</spring.version>
-		<tyrus.version>2.1.2</tyrus.version>
 		<okhttp.version>4.10.0</okhttp.version>
 	</properties>
 
@@ -25,11 +24,6 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-messaging</artifactId>
 			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.tyrus.bundles</groupId>
-			<artifactId>tyrus-standalone-client</artifactId>
-			<version>${tyrus.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
@@ -69,22 +63,6 @@
 										</artifact>
 										<artifact>
 											<id>org.springframework:spring-messaging:${spring.version}</id>
-											<source>true</source>
-										</artifact>
-									</artifacts>
-								</feature>
-								<feature>
-									<id>org.glassfish.tyrus.client.feature</id>
-									<version>${tyrus.version}</version>
-									<label>Tyrus Standalone Client</label>
-									<providerName>projects.eclipse.org/projects/ee4j.tyrus</providerName>
-									<description>Eclipse Tyrus</description>
-									<copyright>Eclipse Foundation</copyright>
-									<license>EPL, Version 2.0</license>
-									<generateSourceFeature>true</generateSourceFeature>
-									<artifacts>
-										<artifact>
-											<id>org.glassfish.tyrus.bundles:tyrus-standalone-client:${tyrus.version}</id>
 											<source>true</source>
 										</artifact>
 									</artifacts>
