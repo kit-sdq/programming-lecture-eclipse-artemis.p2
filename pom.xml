@@ -9,7 +9,7 @@
 	<description>P2 Repository for generic Maven Depencencies</description>
 
 	<properties>
-		<tycho.version>3.0.2</tycho.version>
+		<tycho.version>3.0.3</tycho.version>
 		<spring.version>6.0.4</spring.version>
 		<okhttp.version>4.10.0</okhttp.version>
 	</properties>
