@@ -10,7 +10,7 @@
 
 	<properties>
 		<tycho.version>3.0.3</tycho.version>
-		<spring.version>6.0.5</spring.version>
+		<spring.version>6.0.6</spring.version>
 		<okhttp.version>4.10.0</okhttp.version>
 	</properties>
 
